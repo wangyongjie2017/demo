@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>README</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>HTML/CSS开发规范指南</h1>
+<h2>目录</h2>
+<ol>
+<li><a href="#intro">规范概述</a></li>
+<li><a href="#profile">基本信息</a></li>
+<li>
+<a href="#general">通用约定</a>
+<ul>
+<li><a href="#directory">文档目录结构</a></li>
+<li><a href="#separate">分离</a></li>
+<li><a href="#file-name">文件命名</a></li>
+<li><a href="#indentation">缩进</a></li>
+<li><a href="#encoding">编码</a></li>
+<li><a href="#lowercase">小写</a></li>
+<li><a href="#comment">注释</a></li>
+<li><a href="#todo">待办事项</a></li>
+<li><a href="#end-line-space">行尾空格</a></li>
+<li><a href="#protocol-relative-url">省略嵌入式资源协议头</a></li>
+<li><a href="#validator">代码有效性</a></li>
+</ul>
+</li>
+<li>
+<a href="#html">HTML约定</a>
+<ul>
+<li><a href="#doctype">文档类型</a></li>
+<li><a href="#type">省略type属性</a></li>
+<li><a href="#attribute">省略属性值</a></li>
+<li><a href="#quots">用双引号包裹属性值</a></li>
+<li><a href="#nest">嵌套</a></li>
+<li><a href="#close-tag">标签闭合</a></li>
+<li><a href="#perceivable">多媒体替代方案</a></li>
+<li><a href="#friendly">有效操作</a></li>
+<li><a href="#html-comment">按模块添加注释</a></li>
+<li><a href="#format">格式</a></li>
+<li><a href="#semantic">语义化标签</a></li>
+<li><a href="#html-module">模块化</a></li>
+</ul>
+</li>
+<li>
+<a href="#css">CSS约定</a>
+<ul>
+<li><a href="#link">文件引用</a></li>
+<li><a href="#element">命名-组成元素</a></li>
+<li><a href="#word">命名-词汇规范</a></li>
+<li><a href="#abbr">命名-缩写规范</a></li>
+<li><a href="#prefix">命名-前缀规范</a></li>
+<li><a href="#id">id与class</a></li>
+<li><a href="#packaging">书写格式</a></li>
+<li><a href="#semicolon">规则与分号</a></li>
+<li><a href="#unit">0与单位</a></li>
+<li><a href="#decimal">0与小数</a></li>
+<li><a href="#non-quotes">去掉uri中引用资源的引号</a></li>
+<li><a href="#hex">HEX颜色值写法</a></li>
+<li><a href="#order">属性书写顺序</a></li>
+<li><a href="#css-comment">注释规范</a></li>
+<li><a href="#hack">hack规范</a></li>
+<li><a href="#low-selector">避免低效率选择器</a></li>
+<li><a href="#override">属性缩写与分拆</a></li>
+<li><a href="#css-module">模块化</a></li>
+</ul>
+</li>
+<li>
+<a href="#img">图像约定</a>
+<ul>
+<li><a href="#img-compress">图像压缩</a></li>
+<li><a href="#background-image">背景图</a></li>
+<li><a href="#image">前景图</a></li>
+<li><a href="#sprite">Sprite</a></li>
+</ul>
+</li>
+<li><a href="#end">结语</a></li>
+</ol>
+<p><a name="intro"></a></p>
+<h2>规范概述</h2>
+<p>规范的制定是我们长期以来对工作的积累与沉淀的产物，帮助我们更快、更好、更高效的完成繁重、复杂、多样化的任务，我们制作规范的主要目的在于：</p>
+<ul>
+<li>降低每个组员介入项目的门槛成本；</li>
+<li>提高工作效率及协同开发的便捷性；</li>
+<li>高度统一的代码风格；</li>
+<li>提供一整套HTML、CSS解决方案，来帮助开发人员快速做出高质量的符合要求的页面。</li>
+</ul>
+<p><a name="profile"></a></p>
+<h2>基本信息</h2>
+<p>规范名称 | Cook
+--------|------|
+当前版本 | v1.0 beta
+规范发起 | <a href="http://weibo.com/doyoe">杜瑶(@doyoe)</a>
+参与人群 | Qunar FED
+最后更新 | 2015.03.20</p>
+<p><a name="general"></a></p>
+<h2>通用约定</h2>
+<p><a name="directory"></a></p>
+<h3>1.文档目录结构</h3>
+<p><code>|-- 项目名
+	|-- src	开发环境
+		|-- html    静态页面模板目录
+		|-- bgimg   背景图目录（假设有的话）
+		|-- image   前景图目录（假设有的话）
+		|-- font    字体目录（假设有的话）
+		|-- scripts      脚本目录
+		|-- styles（Yo）  样式目录
+			|-- lib   基础库
+				|-- core      核心代码：reset
+				|-- element   元素
+				|-- fragment  公用碎片
+				|-- layout    布局
+				|-- widget    组件
+			|-- usage  项目具体实现
+				|-- project 某个子项目
+					|-- core      核心代码：桥接lib中的core，可以进行项目级扩展
+					|-- fragment  项目公用碎片
+					|-- module    模块
+					|-- page      page桥接文件目录：src-list
+					|-- export    page pack之后的文件目录
+	|-- prd	生产环境
+		|-- bgimg   背景图目录（假设有的话）
+		|-- image   前景图目录（假设有的话）
+		|-- font    字体目录（假设有的话）
+		|-- scripts      脚本目录
+		|-- styles（Yo）  样式目录
+			|-- project1 子项目
+				|-- index.css
+				|-- login.css
+				|-- and etc...
+			|-- project2 子项目
+				|-- index.css
+				|-- login.css
+				|-- and etc...
+			|-- and etc...</code></p>
+<blockquote>
+<p><code>src</code>, <code>scripts</code>, <code>styles</code> 三个目录是为了和现有项目保持一致，避免修改过大，所以保持不变。</p>
+<p><code>html</code> 目录，用于存放前端开发做的静态页面，以备查阅、备份、review或给后端套页面。</p>
+<p><code>bgimg</code>, <code>image</code>, <code>font</code> 三个目录在Qunar一般不会直接存在，因为我们有source服务器，这些资源都会在那上面管理；不过特殊情况也会有，比如一些独立的项目，没有使用source的，那么就需要遵循这样的目录划分。</p>
+<p>至于 <code>html</code>, <code>bgimg</code>, <code>image</code>, <code>font</code> 这几个目录为什么没有加 <code>s</code>，主要是因为不希望大家去想某个目录是否为复数，简单点就好。</p>
+<p><code>prd</code> 为生产环境目录，以 <code>xxx</code> 项目中的一个子项目 <code>mobile</code> 为例，其生产环境中的某个CSS外链大致如下：<code>//sitename.com/prd/styles/mobile/index.css</code></p>
+</blockquote>
+<p><a name="separate"></a></p>
+<h3>2.分离</h3>
+<p>结构（HTML）、表现（CSS）、行为分离（JavaScript）</p>
+<blockquote>
+<p>将结构与表现、行为分离，保证它们之间的最小耦合，这对前期开发和后期维护都至关重要。</p>
+</blockquote>
+<p><a name="file-name"></a></p>
+<h3>3.文件命名</h3>
+<ul>
+<li>CSS模块文件，其文件名必须与模块名一致；</li>
+</ul>
+<p>假定有这样一个模块：</p>
+<pre><code>.m-detail { sRules; }
+.m-detail-hd { sRules; }
+.m-detail-bd { sRules; }
+.m-detail-ft { sRules; }
+</code></pre>
+
+<blockquote>
+<p>那么该模块的文件名应该为：<code>m-detail.css</code></p>
+</blockquote>
+<ul>
+<li>CSS页面文件，其文件名必须与HTML文件名一致；</li>
+</ul>
+<blockquote>
+<p>假定有一个HTML页面叫 <code>product.html</code>，那么其相对应的CSS页面文件名应该为：<code>product.css</code></p>
+<p>假定现在有一个 <code>product.html</code>，里面有2个模块：</p>
+</blockquote>
+<pre><code>+&lt;section class=&quot;m-list&quot;&gt;
++&lt;section class=&quot;m-info&quot;&gt;
+</code></pre>
+
+<p>那么开发人员能快速找到与该页面相关的3个直接CSS文件，包括：<code>product.css</code>, <code>m-list.css</code>, <code>m-info.css</code></p>
+<p><a name="indentation"></a></p>
+<h3>4.缩进</h3>
+<p>使用tab（4个空格宽度）来进行缩进，可以在IDE里进行设置</p>
+<p><a name="encoding"></a></p>
+<h3>5.编码</h3>
+<ul>
+<li>以 UTF-8 无 BOM 编码作为文件格式；</li>
+<li>在HTML中文档中用 <code>&lt;meta charset=&quot;utf-8&quot; /&gt;</code> 来指定编码；</li>
+<li>为每个CSS文档显示的定义编码，在文档首行定义 <code>@charset &quot;utf-8&quot;;</code></li>
+</ul>
+<blockquote>
+<p>在 Sass 中，如果文档中出现中文，却未显示定义编码，将会编译出错，为了统一各种写法，且提前规避错误几率，统一要求每个CSS文档都需要定义编码</p>
+</blockquote>
+<p><a name="lowercase"></a></p>
+<h3>6.小写</h3>
+<ul>
+<li>所有的HTML标签必须小写；</li>
+<li>所有的HTML属性必须小写；</li>
+<li>所有的样式名及规则必须小写。</li>
+</ul>
+<p><a name="comment"></a></p>
+<h3>7.注释</h3>
+<p>尽可能的为你的代码写上注释。解释为什么要这样写，它是新鲜的方案还是解决了什么问题。</p>
+<p><a name="todo"></a></p>
+<h3>8.待办事项</h3>
+<p>用 TODO 标示待办事项和正在开发的条目</p>
+<pre><code>&lt;!-- TODO: 图文混排 --&gt;
+&lt;div class=&quot;g-imgtext&quot;&gt;
+&lt;img src=&quot;1.png&quot; alt=&quot;&quot; /&gt;
+...
+
+/* TODO: 图文混排 comm: g-imgtext */
+.g-imgtext { sRules; }
+</code></pre>
+
+<p><a name="end-line-space"></a></p>
+<h3>9.行尾空格</h3>
+<p>删除行尾空格，这些空格没有必要存在</p>
+<p><a name="protocol-relative-url"></a></p>
+<h3>10.省略嵌入式资源协议头</h3>
+<p>省略图像、媒体文件、样式表和脚本等URL协议头部声明 ( http: , https: )。如果不是这两个声明的URL则不省略。</p>
+<p>省略协议声明，使URL成相对地址，防止内容混淆问题和导致小文件重复下载（这个主要是指http和https交杂的场景中）。</p>
+<p>不推荐：</p>
+<pre><code>&lt;script src=&quot;http://www.google.com/js/gweb/analytics/autotrack.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+<p>推荐：</p>
+<pre><code>&lt;script src=&quot;//www.google.com/js/gweb/analytics/autotrack.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+<p>不推荐：</p>
+<p><code>.example {
+  background: url(http://www.google.com/images/example);
+}</code></p>
+<p>推荐：</p>
+<p><code>.example {
+  background: url(//www.google.com/images/example);
+}</code></p>
+<blockquote>
+<p>注：省略协议头在IE7-8下会有一点小问题，外部CSS文件（link和@import）会被下载两遍，所以该条目的约定看具体项目。</p>
+</blockquote>
+<p><a name="validator"></a></p>
+<h3>11.代码有效性</h3>
+<ul>
+<li>使用 <a href="http://validator.w3.org/">W3C HTML Validator</a> 来验证你的HTML代码有效性；</li>
+<li>使用 <a href="http://jigsaw.w3.org/css-validator/">W3C CSS Validator</a> 来验证你的CSS代码有效性。</li>
+</ul>
+<blockquote>
+<p>代码验证不是最终目的，真的目的在于让开发者在经过多次的这种验证过程后，能够深刻理解到怎样的语法或写法是非标准和不推荐的，即使在某些场景下被迫要使用非标准写法，也可以做到心中有数。</p>
+</blockquote>
+<p><a name="html"></a></p>
+<h2>HTML约定</h2>
+<p><a name="doctype"></a></p>
+<h3>1.文档类型</h3>
+<ul>
+<li>统一使用HTML5的标准文档类型：<code>&lt;!DOCTYPE html&gt;</code>；</li>
+</ul>
+<blockquote>
+<p>HTML5文档类型具备前后兼容的特质，并且易记易书写</p>
+</blockquote>
+<ul>
+<li>在文档doctype申明之前，不允许加上任何非空字符；</li>
+</ul>
+<blockquote>
+<p>任何出现在doctype申明之前的字符都将使得你的HTML文档进入非标准模式</p>
+</blockquote>
+<ul>
+<li>不允许添加 <code>&lt;meta&gt;</code> 标签强制改变文档模式。</li>
+</ul>
+<blockquote>
+<p>避免出现不可控的问题</p>
+</blockquote>
+<p><a name="type"></a></p>
+<h3>2.省略type属性</h3>
+<p>在调用CSS和JavaScript时，可以将type属性省略不写</p>
+<p>不允许：</p>
+<pre><code>&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;base.css&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;base.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+<p>应该：</p>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;base.css&quot; /&gt;
+&lt;script src=&quot;base.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+<blockquote>
+<p>因为HTML5在引入CSS时，默认type值为text/css；在引入JavaScript时，默认type值为text/javascript</p>
+</blockquote>
+<p><a name="attribute"></a></p>
+<h3>3.省略属性值</h3>
+<p>非必须属性值可以省略</p>
+<p>不允许：</p>
+<pre><code>&lt;input type=&quot;text&quot; readonly=&quot;readonly&quot; /&gt;
+&lt;input type=&quot;text&quot; disabled=&quot;disabled&quot; /&gt;
+</code></pre>
+
+<p>应该：</p>
+<pre><code>&lt;input type=&quot;text&quot; readonly /&gt;
+&lt;input type=&quot;text&quot; disabled /&gt;
+</code></pre>
+
+<blockquote>
+<p>这里的 readonly 和 disabled 属性的值是非必须的，可以省略不写，我们知道HTML5表单元素新增了很多类似的属性，如: required</p>
+</blockquote>
+<p><a name="quots"></a></p>
+<h3>4.用双引号包裹属性值</h3>
+<p>所有的标签属性值必须要用双引号包裹，同时也不允许有的用双引号，有的用单引号的情况</p>
+<p>不允许：</p>
+<pre><code>&lt;a href=http://www.qunar.com class=home&gt;去哪儿网&lt;/a&gt;
+</code></pre>
+
+<p>应该：</p>
+<pre><code>&lt;a href=&quot;http://www.qunar.com&quot; class=&quot;home&quot;&gt;去哪儿网&lt;/a&gt;
+</code></pre>
+
+<p><a name="nest"></a></p>
+<h3>5.嵌套</h3>
+<p>所有元素必须正确嵌套</p>
+<ul>
+<li>不允许交叉；</li>
+</ul>
+<p>不允许：</p>
+<pre><code>&lt;span&gt;&lt;dfn&gt;交叉嵌套&lt;/span&gt;&lt;/dfn&gt;
+</code></pre>
+
+<p>应该：</p>
+<pre><code>&lt;span&gt;&lt;dfn&gt;交叉嵌套&lt;/dfn&gt;&lt;/span&gt;
+</code></pre>
+
+<ul>
+<li>不允许非法的子元素嵌套。</li>
+</ul>
+<p>不允许：</p>
+<pre><code>&lt;ul&gt;
+    &lt;h3&gt;xx列表&lt;/h3&gt;
+    &lt;li&gt;asdasdsdasd&lt;/li&gt;
+    &lt;li&gt;asdasdsdasd&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<p>应该：</p>
+<pre><code>&lt;div&gt;
+    &lt;h3&gt;xx列表&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li&gt;asdasdsdasd&lt;/li&gt;
+        &lt;li&gt;asdasdsdasd&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+
+<ul>
+<li>不推荐inline元素包含block元素；</li>
+</ul>
+<p>不推荐：</p>
+<pre><code>&lt;span&gt;
+    &lt;h1&gt;这是一个块级h1元素&lt;/h1&gt;
+    &lt;p&gt;这是一个块级p元素&lt;/p&gt;
+&lt;/span&gt;
+</code></pre>
+
+<p>推荐：</p>
+<pre><code>&lt;div&gt;
+    &lt;h1&gt;这是一个块级h1元素&lt;/h1&gt;
+    &lt;p&gt;这是一个块级p元素&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+
+<blockquote>
+<p>规则可参考：</p>
+<p>HTML4/XHTML1.0 Strict: <a href="http://www.cs.tut.fi/~jkorpela/html/strict.html">嵌套规则</a>。</p>
+<p>HTML5: <a href="http://www.w3.org/TR/html5/">嵌套规则</a></p>
+<p>举个例子，在HTML5中，a元素同时属于 Flow content, Phrasing content, Interactive content, Palpable content 4个分类，那些子元素是 phrasing 元素的元素可以是 a 的父元素，a 允许的子元素是以它的父元素允许的子元素为准，但不能包含 interactive 元素。</p>
+</blockquote>
+<p><a name="close-tag"></a></p>
+<h3>6.标签闭合</h3>
+<p>所有标签必须闭合</p>
+<p>不允许：</p>
+<pre><code>&lt;div&gt;balabala...
+&lt;link rel=&quot;stylesheet&quot; href=&quot;*.css&quot;&gt;
+</code></pre>
+
+<p>应该：</p>
+<pre><code>&lt;div&gt;balabala...&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;*.css&quot; /&gt;
+</code></pre>
+
+<blockquote>
+<p>虽然有些标记没有要求必须关闭，但是为了避免出错的几率，要求必须全部关闭，省去判断某标记是否需要关闭的时间</p>
+</blockquote>
+<p><a name="perceivable"></a></p>
+<h3>7.多媒体替代方案</h3>
+<ul>
+<li>为img元素加上alt属性；</li>
+<li>为视频内容提供音轨替代；</li>
+<li>为音频内容提供字母替代等等。</li>
+</ul>
+<p>不推荐：</p>
+<pre><code>&lt;img src=&quot;banner.jpg&quot; /&gt;
+</code></pre>
+
+<p>推荐：</p>
+<pre><code>&lt;img src=&quot;banner.jpg&quot; alt=&quot;520即将到来，爱就大声说出来&quot; /&gt;
+</code></pre>
+
+<blockquote>
+<p>alt属性的内容为对该图片的简要描述，这对于盲人用户和图像损毁都非常有意义，即无障碍。对于纯粹的装饰性图片，alt属性值可以留空，如 alt=&quot;&quot;</p>
+</blockquote>
+<p><a name="friendly"></a></p>
+<h3>8.有效操作</h3>
+<p>为表单元素label加上for属性</p>
+<p>不允许：</p>
+<pre><code>&lt;input type=&quot;radio&quot; name=&quot;color&quot; value=&quot;0&quot; /&gt;&lt;label&gt;蓝色&lt;/label&gt;
+&lt;input type=&quot;radio&quot; name=&quot;color&quot; value=&quot;1&quot; /&gt;&lt;label&gt;粉色&lt;/label&gt;
+</code></pre>
+
+<p>应该：</p>
+<pre><code>&lt;input type=&quot;radio&quot; id=&quot;blue&quot; name=&quot;color&quot; value=&quot;0&quot; /&gt;&lt;label for=&quot;blue&quot;&gt;蓝色&lt;/label&gt;
+&lt;input type=&quot;radio&quot; id=&quot;pink&quot; name=&quot;color&quot; value=&quot;1&quot; /&gt;&lt;label for=&quot;pink&quot;&gt;粉色&lt;/label&gt;
+</code></pre>
+
+<blockquote>
+<p>for属性能让点击label标签的时候，同时focus到对应的 input 和 textarea上，增加响应区域</p>
+</blockquote>
+<p><a name="html-comment"></a></p>
+<h3>9.按模块添加注释</h3>
+<p>在每个模块开始和结束的地方添加注释</p>
+<pre><code>&lt;!-- 新闻列表模块 --&gt;
+&lt;div class=&quot;m-news g-mod&quot;
+...
+&lt;!-- /新闻列表模块 --&gt;
+
+&lt;!-- 排行榜模块 --&gt;
+&lt;div class=&quot;m-topic g-mod&quot;
+...
+&lt;!-- /排行榜模块 --&gt;
+</code></pre>
+
+<blockquote>
+<p>注释内容左右两边保留和注释符号有1个空格位，在注释内容内不允许再出现中划线“-”，某些浏览器会报错。</p>
+<p>注释风格保持与原生HTML的语法相似：成对出现 <code>&lt;!-- comment --&gt;&lt;!-- /comment --&gt;</code></p>
+</blockquote>
+<p><a name="format"></a></p>
+<h3>10.格式</h3>
+<ul>
+<li>将每个块元素、列表元素或表格元素都放在新行；</li>
+<li>inline元素视情况换行，以长度不超过编辑器一屏为宜；</li>
+<li>每个子元素都需要相对其父级缩进（参见<a href="#indentation">缩进约定</a>）。</li>
+</ul>
+<p>不推荐：</p>
+<pre><code>&lt;div&gt;&lt;h1&gt;asdas&lt;/h1&gt;&lt;p&gt;dff&lt;em&gt;asd&lt;/em&gt;asda&lt;span&gt;sds&lt;/span&gt;dasdasd&lt;/p&gt;&lt;/div&gt;
+</code></pre>
+
+<p>推荐：</p>
+<pre><code>&lt;div&gt;
+    &lt;h1&gt;asdas&lt;/h1&gt;
+    &lt;p&gt;dff&lt;em&gt;asd&lt;/em&gt;asda&lt;span&gt;sds&lt;/span&gt;dasdasd&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p><a name="semantic"></a></p>
+<h3>11.语义化标签</h3>
+<ul>
+<li>根据HTML元素的本身用途去使用它们；</li>
+<li>禁止使用被废弃的用于表现的标签，如 center, font 等；</li>
+<li>部分在XHTML1中被废弃的标签，在HTML5中被重新赋予了新的语义，在选用时请先弄清其语义，如:b, i, u等。</li>
+</ul>
+<p>不允许：</p>
+<pre><code>&lt;p&gt;标题&lt;/p&gt;
+</code></pre>
+
+<p>应该：</p>
+<pre><code>&lt;h1&gt;标题&lt;/h1&gt;
+</code></pre>
+
+<blockquote>
+<p>虽然使用p标签，也可以通过CSS去定义它的外观和标题相同，但p标签本身的并不是表示标题，而是表示文本段落</p>
+<p>参阅：<a href="http://www.w3.org/TR/html5/">HTML5 Elements</a></p>
+</blockquote>
+<p><a name="html-module"></a></p>
+<h3>12.模块化</h3>
+<ul>
+<li>每个模块必须有一个模块名；</li>
+<li>每个模块的基本组成部分应该一致；</li>
+<li>模块的子节点类名需带上模块名（防止模块间嵌套时产生不必要的覆盖）；</li>
+<li>孙辈节点无需再带模块名。</li>
+</ul>
+<p>代码如：</p>
+<pre><code>&lt;section class=&quot;m-detail&quot;&gt;
+    &lt;header class=&quot;m-detail-hd&quot;&gt;
+        &lt;h1 class=&quot;title&quot;&gt;模块标题&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;div class=&quot;m-detail-bd&quot;&gt;
+        &lt;p class=&quot;info&quot;&gt;一些实际内容&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;footer class=&quot;m-detail-ft&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;more&quot;&gt;更多&lt;/a&gt;
+    &lt;/footer&gt;
+&lt;/section&gt;
+</code></pre>
+
+<blockquote>
+<p>其中 <code>.m-detail-hd</code>, <code>.m-detail-bd</code>, <code>.m-detail-ft</code> 为可选，视具体模块情况决定是否需要抽象为这种 <strong>头，中，尾</strong> 的结构</p>
+</blockquote>
+<p><a name="css"></a></p>
+<h2>CSS约定</h2>
+<p><a name="link"></a></p>
+<h3>1.文件引用</h3>
+<ul>
+<li>一律使用link的方式调用外部样式</li>
+<li>不允许在页面中使用 <code>&lt;style&gt;</code> 块；</li>
+<li>不允许在 <code>&lt;style&gt;</code> 块中使用 <code>@import</code>；</li>
+<li>不允许使用 <code>style</code> 属性写行内样式。</li>
+</ul>
+<blockquote>
+<p>一般情况下，在页面中只允许使用 <code>&lt;link /&gt;</code> 标签来引用CSS文件，</p>
+</blockquote>
+<p><a name="element"></a></p>
+<h3>2.命名-组成元素</h3>
+<ul>
+<li>命名必须由单词、中划线①或数字组成；</li>
+<li>不允许使用拼音（约定俗成的除外，如：youku, baidu），尤其是缩写的拼音、拼音与英文的混合。</li>
+</ul>
+<p>不推荐：</p>
+<pre><code>.xiangqing { sRules; }
+.news_list { sRules; }
+.zhuti { sRules; }
+</code></pre>
+
+<p>推荐：</p>
+<pre><code>.detail { sRules; }
+.news-list { sRules; }
+.topic { sRules; }
+</code></pre>
+
+<blockquote>
+<p>①我们使用中划线 “-” 作为连接字符，而不是下划线 &quot;_&quot;。</p>
+<p>我们知道2种方式都有不少支持者，但 &quot;-&quot; 能让你少按一次shift键，并且更符合CSS原生语法，所以我们只选一种目前业内普遍使用的方式</p>
+</blockquote>
+<p><a name="word"></a></p>
+<h3>3.命名-词汇规范</h3>
+<ul>
+<li>不依据表现形式来命名；</li>
+<li>可根据内容来命名；</li>
+<li>可根据功能来命名。</li>
+</ul>
+<p>不推荐：</p>
+<pre><code>left, right, center, red, black
+</code></pre>
+
+<p>推荐：</p>
+<pre><code>nav, aside, news, type, search
+</code></pre>
+
+<p><a name="abbr"></a></p>
+<h3>4.命名-缩写规范</h3>
+<ul>
+<li>保证缩写后还能较为清晰保持原单词所能表述的意思；</li>
+<li>使用业界熟知的或者约定俗成的。</li>
+</ul>
+<p>不推荐：</p>
+<pre><code>navigation   =&gt;  navi
+header       =&gt;  head
+description  =&gt;  des
+</code></pre>
+
+<p>推荐：</p>
+<pre><code>navigation   =&gt;  nav
+header       =&gt;  hd
+description  =&gt;  desc
+</code></pre>
+
+<p><a name="prefix"></a></p>
+<h3>5.命名-前缀规范</h3>
+<p>前缀|说明|示例
+---|---|---|
+g-|全局通用样式命名，前缀g全称为global，一旦修改将影响全站样式|g-mod
+m-|模块命名方式|m-detail
+ui-|组件命名方式|ui-selector
+js-|所有用于纯交互的命名，不涉及任何样式规则。JSer拥有全部定义权限|js-switch</p>
+<ul>
+<li>选择器必须是以某个前缀开头</li>
+</ul>
+<p>不推荐：</p>
+<pre><code>.info { sRules; }
+.current { sRules; }
+.news { sRules; }
+</code></pre>
+
+<blockquote>
+<p>因为这样将给我们带来不可预知的管理麻烦以及沉重的历史包袱。你永远也不会知道哪些样式名已经被用掉了，如果你是一个新人，你可能会遭遇，你每定义个样式名，都有同名的样式已存在，然后你只能是换样式名或者覆盖规则。</p>
+</blockquote>
+<p>推荐：</p>
+<pre><code>.m-detail .info { sRules; }
+.m-detail .current { sRules; }
+.m-detail .news { sRules; }
+</code></pre>
+
+<blockquote>
+<p>所有的选择器必须是以 g-, m-, ui- 等有前缀的选择符开头的，意思就是说所有的规则都必须在某个相对的作用域下才生效，尽可能减少全局污染。</p>
+</blockquote>
+<p>js- 这种级别的className完全交由JSer自定义，但是命名的规则也可以保持跟重构一致，比如说不能使用拼音之类的</p>
+<p><a name="id"></a></p>
+<h3>6.id与class</h3>
+<p>重构工程师只允许使用class（因历史原因及大家的习惯做出妥协）。</p>
+<p><a name="packaging"></a></p>
+<h3>7.书写格式</h3>
+<ul>
+<li>选择器与大括号之间保留一个空格；</li>
+<li>分号之后保留一个空格；</li>
+<li>逗号之后保留一个空格；</li>
+<li>所有规则需换行；</li>
+<li>多组选择器之间需换行。</li>
+</ul>
+<p>不推荐：</p>
+<pre><code>main{
+    display:inline-block;
+}
+h1,h2,h3{
+    margin:0;
+    background-color:rgba(0,0,0,.5);
+}
+</code></pre>
+
+<p>推荐：</p>
+<pre><code>main {
+    display: inline-block;
+}
+h1,
+h2,
+h3 {
+    margin: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+</code></pre>
+
+<p><a name="semicolon"></a></p>
+<h3>8.规则与分号</h3>
+<p>每条规则结束后都必须加上分号</p>
+<p>不推荐：</p>
+<pre><code>body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px
+}
+</code></pre>
+
+<p>推荐：</p>
+<pre><code>body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+</code></pre>
+
+<p><a name="unit"></a></p>
+<h3>9.0与单位</h3>
+<p>如果属性值为0，则不需要为0加单位</p>
+<p>不推荐：</p>
+<pre><code>body {
+    margin: 0px;
+    padding: 0px;
+}
+</code></pre>
+
+<p>推荐：</p>
+<pre><code>body {
+    margin: 0;
+    padding: 0;
+}
+</code></pre>
+
+<p><a name="decimal"></a></p>
+<h3>10.0与小数</h3>
+<p>如果是0开始的小数，前面的0可以省略不写</p>
+<p>不推荐：</p>
+<pre><code>body {
+    opacity: 0.6;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+</code></pre>
+
+<p>推荐：</p>
+<pre><code>body {
+    opacity: .6;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+}
+</code></pre>
+
+<p><a name="non-quotes"></a></p>
+<h3>11.去掉uri中引用资源的引号</h3>
+<p>不要在url()里对引用资源加引号</p>
+<p>不推荐：</p>
+<pre><code>body {
+    background-image: url(&quot;sprites.png&quot;);
+}
+@import url(&quot;global.css&quot;);
+</code></pre>
+
+<p>推荐：</p>
+<pre><code>body {
+    background-image: url(sprites.png);
+}
+@import url(global.css);
+</code></pre>
+
+<p><a name="hex"></a></p>
+<h3>12.HEX颜色值写法</h3>
+<ul>
+<li>将所有的颜色值小写；</li>
+<li>可以缩写的缩写至3位。</li>
+</ul>
+<p>不推荐：</p>
+<pre><code>body {
+    background-color: #FF0000;
+}
+</code></pre>
+
+<p>推荐：</p>
+<pre><code>body {
+    background-color: #f00;
+}
+</code></pre>
+
+<p><a name="order"></a></p>
+<h3>13.属性书写顺序</h3>
+<ul>
+<li>遵循先布局后内容的顺序。</li>
+</ul>
+<p><code>.g-box {
+　　　display: block;
+　　　float: left;
+　　　width: 500px;
+　　　height: 200px;
+　　　margin: 10px;
+　　　padding: 10px;
+　　　border: 10px solid;
+　　　background: #aaa;
+　　　color: #000;
+　　　font: 14px/1.5 sans-serif;
+}</code></p>
+<blockquote>
+<p>这个应该好理解，比如优先布局，我们知道布局属性有 display, float, overflow 等等；内容次之，比如 color, font, text-align 之类。</p>
+</blockquote>
+<ul>
+<li>组概念。</li>
+</ul>
+<p>拿上例的代码来说，如果我们还需要进行定位及堆叠，规则我们可以改成如下：</p>
+<p><code>.g-box {
+　　　display: block;
+　　　position: relative;
+　　　z-index: 2;
+　　　top: 10px;
+　　　left: 100px;
+　　　float: left;
+　　　width: 500px;
+　　　height: 200px;
+　　　margin: 10px;
+　　　padding: 10px;
+　　　border: 10px solid;
+　　　background: #aaa;
+　　　color: #000;
+　　　font: 14px/1.5 sans-serif;
+}</code></p>
+<blockquote>
+<p>从代码中可以看到，我们直接将z-index, top, left 紧跟在 position 之后，因为这几个属性其实是一组的，如果去掉position，则后3条属性规则都将失效。</p>
+</blockquote>
+<ul>
+<li>私有属性在前标准属性在后</li>
+</ul>
+<p><code>.g-box {
+　　　-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+　　　-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+　　　-o-box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+　　　box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+}</code></p>
+<blockquote>
+<p>当有一天你的浏览器升级后，可能不再支持私有写法，那么这时写在后面的标准写法将生效，避免无法向后兼容的情况发生。</p>
+</blockquote>
+<p><a name="css-comment"></a></p>
+<h3>14.注释规范</h3>
+<p>保持注释内容与星号之间有一个空格的距离</p>
+<p><strong>普通注释（单行）</strong></p>
+<pre><code>/* 普通注释 */
+</code></pre>
+
+<p><strong>区块注释</strong></p>
+<pre><code>/**
+ * 模块: m-detail
+ * 描述：酒店详情模块
+ * 应用：page detail, info and etc...etc
+ */
+</code></pre>
+
+<blockquote>
+<p>有特殊作用的规则一定要有注释说明
+应用了高级技巧的地方一定要注释说明</p>
+</blockquote>
+<p><a name="hack"></a></p>
+<h3>15.hack规范</h3>
+<ul>
+<li>尽可能的减少对Hack的使用和依赖，如果在项目中对Hack的使用太多太复杂，对项目的维护将是一个巨大的挑战；</li>
+<li>使用其它的解决方案代替Hack思路；</li>
+<li>如果非Hack不可，选择稳定且常用并易于理解的。</li>
+</ul>
+<p><code>.test {
+　　　color: #000;       /* For all */
+　　　color: #111\9;     /* For all IE */
+　　　color: #222\0;     /* For IE8 and later, Opera without Webkit */
+　　　color: #333\9\0;   /* For IE8 and later */
+　　　color: #444\0/;    /* For IE8 and later */
+　　　*color: #666;      /* For IE7 and earlier */
+　　　_color: #777;      /* For IE6 and earlier */
+}</code></p>
+<ul>
+<li>严谨且长期的项目，针对IE可以使用条件注释作为预留Hack或者在当前使用</li>
+</ul>
+<p>IE条件注释语法：</p>
+<pre><code>&lt;!--[if &lt;keywords&gt;? IE &lt;version&gt;?]&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;*.css&quot; /&gt;
+&lt;![endif]--&gt;
+</code></pre>
+
+<p>语法说明：</p>
+<p><code>&lt;keywords&gt;
+if条件共包含6种选择方式：是否、大于、大于或等于、小于、小于或等于、非指定版本
+是否：指定是否IE或IE某个版本。关键字：空
+大于：选择大于指定版本的IE版本。关键字：gt（greater than）
+大于或等于：选择大于或等于指定版本的IE版本。关键字：gte（greater than or equal）
+小于：选择小于指定版本的IE版本。关键字：lt（less than）
+小于或等于：选择小于或等于指定版本的IE版本。关键字：lte（less than or equal）
+非指定版本：选择除指定版本外的所有IE版本。关键字：!</code></p>
+<p><code>&lt;version&gt;
+目前的常用IE版本为6.0及以上，推荐酌情忽略低版本，把精力花在为使用高级浏览器的用户提供更好的体验上，另从IE10开始已无此特性</code></p>
+<p><a name="low-selector"></a></p>
+<h3>16.避免低效率选择器</h3>
+<ul>
+<li>避免类型选择器</li>
+</ul>
+<p>不允许：</p>
+<pre><code>div#doc { sRules; }
+li.first { sRules; }
+</code></pre>
+
+<p>应该：</p>
+<pre><code>#doc { sRules; }
+.first { sRules; }
+</code></pre>
+
+<blockquote>
+<p>CSS选择器是由右到左进行解析的，所以 div#doc 本身并不会比 #doc 更快</p>
+</blockquote>
+<ul>
+<li>避免多id选择器</li>
+</ul>
+<p>不允许：</p>
+<pre><code>#xxx #yyy { sRules; }
+</code></pre>
+
+<p>应该：</p>
+<pre><code>#yyy { sRules; }
+</code></pre>
+
+<p><a name="override"></a></p>
+<h3>17.属性缩写与分拆</h3>
+<ul>
+<li>无继承关系时，使用缩写</li>
+</ul>
+<p>不推荐：</p>
+<p><code>body {
+　　　margin-top: 10px;
+　　　margin-right: 10px;
+　　　margin-bottom: 10px;
+　　　margin-left: 10px;
+}</code></p>
+<p>推荐：</p>
+<p><code>body {
+　　　margin: 10px;
+}</code></p>
+<ul>
+<li>存在继承关系时，使用分拆方式</li>
+</ul>
+<p>不推荐：</p>
+<p><code>.m-detail {
+　　　font: bold 12px/1.5 arial, sans-serif;
+}
+.m-detail .info {
+　　　font: normal 14px/1.5 arial, sans-serif;
+}</code></p>
+<p>要避免错误的覆盖：</p>
+<p><code>.m-detail .info {
+　　　font: 14px sans;
+}</code></p>
+<blockquote>
+<p>如果你只是想改字号和字体，然后写成了上面这样，这是错误的写法，因为 <code>font</code> 复合属性里的其他属性将会被重置为 user agent 的默认值，比如 <code>font-weight</code> 就会被重置为 <code>normal</code>。</p>
+</blockquote>
+<p>推荐：</p>
+<p><code>.m-detail {
+　　　font: bold 12px/1.5 arial, sans-serif;
+}
+.m-detail .info {
+　　　font-weight: normal;
+　　　font-size: 14px;
+}</code></p>
+<blockquote>
+<p>在存在继承关系的情况下，只将需要变更的属性重定义，不进行缩写，避免不需要的重写的属性被覆盖定义</p>
+</blockquote>
+<ul>
+<li>根据规则条数选择缩写和拆分</li>
+</ul>
+<p>不推荐：</p>
+<p><code>.m-detail {
+　　　border-width: 1px;
+　　　border-style: solid;
+　　　border-color: #000 #000 #f00;
+}</code></p>
+<p>推荐：</p>
+<p><code>.m-detail {
+　　　border: 1px solid #000;
+　　　border-bottom-color: #f00;
+}</code></p>
+<p><a name="css-module"></a></p>
+<h3>18.模块化</h3>
+<ul>
+<li>每个模块必须是一个独立的样式文件，文件名与模块名一致；</li>
+<li>模块样式的选择器必须以模块名开头以作范围约定；</li>
+</ul>
+<p>假定有一个模块如前文 <a href="#html-module">HTML模块化</a>，那么 <code>m-detail.scss</code> 的写法大致如下：</p>
+<pre><code>.m-detail {
+    background: #fff;
+    color: #333;
+    &amp;-hd {
+        padding: 5px 10px;
+        background: #eee;
+        .title {
+            background: #eee;
+        }
+    }
+    &amp;-bd {
+        padding: 10px;
+        .info {
+            font-size: 14px;
+            text-indent: 2em;
+        }
+    }
+    &amp;-ft {
+        text-align: center;
+        .more {
+            color: blue;
+        }
+    }
+}
+</code></pre>
+
+<p>编译之后代码如下：</p>
+<pre><code>.m-detail {
+    background: #fff;
+    color: #333;
+}
+.m-detail-hd {
+    padding: 5px 10px;
+    background: #eee;
+}
+.m-detail-hd .title {
+    background: #eee;
+}
+.m-detail-bd {
+    padding: 10px;
+}
+.m-detail-bd .info {
+    font-size: 14px;
+    text-indent: 2em;
+}
+.m-detail-ft {
+    text-align: center;
+}
+.m-detail-ft .more {
+    color: blue;
+}
+</code></pre>
+
+<blockquote>
+<p>任何超过3级的选择器，需要思考是否必要，是否有无歧义的，能唯一命中的更简短的写法</p>
+</blockquote>
+<p><a name="img"></a></p>
+<h2>图像约定</h2>
+<p><a name="img-compress"></a></p>
+<h3>1.图像压缩</h3>
+<p>所有图片必须经过一定的压缩和优化才能发布</p>
+<p><a name="background-image"></a></p>
+<h3>2.背景图</h3>
+<ul>
+<li>使用PNG格式而不是GIF格式，因为PNG格式色彩更丰富，还能提供更好的压缩比；</li>
+<li>在需要兼容IE6的项目中，尽可能选择PNG8，而不是使用PNG24+滤镜。</li>
+</ul>
+<p><a name="image"></a></p>
+<h3>3.前景图</h3>
+<ul>
+<li>内容图片建议使用JPG，可以拥有更好地显示效果；</li>
+<li>装饰性图片使用PNG。</li>
+</ul>
+<p><a name="sprite"></a></p>
+<h3>4.Sprite</h3>
+<ul>
+<li>CSS Sprite是一种将数个图片合成为一张大图的技术（既可以是背景图也可以是前景图），然后通过偏移来进行图像位置选取；</li>
+<li>CSS Sprite可以减少http请求。</li>
+</ul>
+<p><a name="end"></a></p>
+<h2>结语</h2>
+<p>坚持一致性的原则。</p>
+<p>一个团队的代码风格如果统一了，首先可以培养良好的协同和编码习惯，其次可以减少无谓的思考，再次可以提升代码质量和可维护性。</p>
+<p>统一的代码风格，团队内部阅读或编辑代码，将会变得非常轻松，因为所有组员都处在一致思维环境中。</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
