@@ -6,10 +6,10 @@ function createCanvas(width, height) {
 };
 
 function drawImage(url, x, y, width, height, ctx) {
-    return new Promise((resolve) = > {
+    return new Promise((resolve) => {
         let img = new Image();
         img.crossOrigin = 'anonymous';
-        img.onload = () = > {
+        img.onload = () => {
             ctx.drawImage(img, x, y, width, height);
             resolve()
         }
@@ -65,7 +65,7 @@ function getQuery(key) {
     let result = '';
 
     let search = location.search.substr(1);
-    search.split('&').forEach(item = > {
+    search.split('&').forEach(item => {
         let kv = item.split('=');
         if (kv[0] == key) {
             result = decodeURI(kv[1]);
