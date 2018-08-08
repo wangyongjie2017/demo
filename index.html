@@ -1,116 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>2018 iWeb峰会 邀请函</title>
     <style>
-            * {
-                padding: 0;
-                margin: 0;
-                border: 0;
-                list-style: none;
-            }
-    
-            img {
-                width: 100%;
-            }
-    
-            #my_haha h1 {
-                text-align: center;
-            }
-    
-            #my_haha li {
-                width: 95%;
-                margin: 50px auto;
-                box-shadow: 0 3px 10px 0 rgba(91, 115, 146, .15);
-            }
-    
-            #my_haha li h4 {
-                font-size: 30px;
-                font-weight: 900;
-                color: #000;
-            }
-    
-            #my_haha li h4 span{
-                font-size: 28px;
-                font-weight: 100px;
-                color: brown;
-            }
-    
-           
-        </style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        #app {
+            width: 640px;
+            max-width: 100%;
+            border: 1px solid #eee;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .form {
+            margin: 12px 24px;
+        }
+
+        .form .group {}
+
+        .form .group label {
+            line-height: 42px;
+            color: #333;
+        }
+
+        .form .group input {
+            display: block;
+            width: 100%;
+            height: 42px;
+            padding-left: 12px;
+            padding-right: 12px;
+            border: 1px solid #333;
+        }
+
+        .canvas {
+            display: block;
+            width: 100%;
+        }
+
+        .canvas img {
+            display: block;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="my_haha">
-        <h1>笑话图集</h1>
-        <ol id="my_box">
-        </ol>
-    <div>
-    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
-    <script>
-        //以下代码仅为演示用,具体传入参数请参看接口描述详情页.
-        //需要引用jquery库
 
-        function formatterDateTime() {
-            var date = new Date()
-            var month = date.getMonth() + 1
-            var datetime = date.getFullYear()
-                + ""// "年"
-                + (month >= 10 ? month : "0" + month)
-                + ""// "月"
-                + (date.getDate() < 10 ? "0" + date.getDate() : date
-                    .getDate())
-                + ""
-                + (date.getHours() < 10 ? "0" + date.getHours() : date
-                    .getHours())
-                + ""
-                + (date.getMinutes() < 10 ? "0" + date.getMinutes() : date
-                    .getMinutes())
-                + ""
-                + (date.getSeconds() < 10 ? "0" + date.getSeconds() : date
-                    .getSeconds());
-            return datetime;
-        }
+    <div id="app">
 
-        $.ajax({
-            type: 'post',
-            url: 'http://route.showapi.com/341-3',
-            dataType: 'json',
-            data: {
-                "showapi_timestamp": formatterDateTime(),
-                "showapi_appid": '68568', //这里需要改成自己的appid
-                "showapi_sign": 'ac6c7b131f7748e9916047ac468b425f',  //这里需要改成自己的应用的密钥secret
-                "page": "1",
-                "maxResult": "50"
-            },
+        <form class="form" action="##">
+            <div class="group">
+                <label for="name">尊姓大名：</label>
+                <input id="name" type="text" />
+            </div>
+        </form>
 
-            error: function (XmlHttpRequest, textStatus, errorThrown) {
-                alert("操作失败!");
-            },
-            success: function (result) {
-                var myjson = result.showapi_res_body.contentlist;
-                var mycontent = "";
-                // console.log(myjson)
-                // console.log(data.status.message)
+        <div class="canvas"></div>
+        <img src="./img/background.png" alt="">
+    </div>
 
-                $.each(myjson, function (mya, myb) {
-                    mycontent += "<li><h4>笑话" + (mya + 1) + " ：<span>" + myb.title + "</span></h4> <img src=" + myb.img + ">" + "</li>";
-                    // mycontent += " <img src=" + myb.url + ">";
-                    mycontent += "<hr>";
-                })
-
-                $("#my_box").html(mycontent)
-
-
-                // console.log(result) //console变量在ie低版本下不能用
-                // alert(result.showapi_res_code)
-            }
-        });
-
-    </script>
 </body>
-
+<script src="./index.js"></script>
+<script>
+    const CANVAS_SIZE = {
+        WIDTH: 750,
+        HEIGHT: 1334
+    };
+    const background = './img/background.png';
+    function genPreview(name) {
+        //init canvas
+        let canvas = createCanvas(CANVAS_SIZE.WIDTH, CANVAS_SIZE.HEIGHT);
+        let ctx = canvas.getContext('2d');
+        // document.querySelector('.canvas').appendChild(canvas);
+        //draw background
+        drawImage(background, 0, 0, 750, 1334, ctx).then(() => {
+            //fill text
+            fillText(name, 860, ctx);
+            let img = canvas.toDataURL();
+            document.querySelector('.canvas').innerHTML = '<img src="' + img + '"/>';
+        });
+    }
+    document.querySelector('#name').addEventListener('input', function (e) {
+        let value = e.target.value;
+        genPreview(value);
+    });
+</script>
 </html>
