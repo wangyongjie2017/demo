@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css代码 loding加载</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .loding {
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            position: fixed;
+        }
+
+        .box {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        i {
+            display: block;
+            float: left;
+            width: 6px;
+            height: 50px;
+            margin: 0 2px;
+            background: #59aca5;
+            -webkit-transform: scaleY(0.5);
+            -ms-transform: scaleY(0.5);
+            transform: scaleY(0.5);
+            -webkit-animation: wang 1.2s infinite;
+            animation: wang 1.2s infinite;
+        }
+
+        i:nth-child(1) {
+            -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s;
+        }
+
+        i:nth-child(2) {
+            -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+
+        }
+
+        i:nth-child(3) {
+            -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+
+        }
+
+        i:nth-child(4) {
+            -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+
+        }
+
+        i:nth-child(5) {
+            -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+
+        }
+
+        @-webkit-keyframes wang {
+
+            0%,
+            20%,
+            100% {
+                -webkit-transform: scaleY(0.4);
+                transform: scaleY(0.4);
+            }
+
+            40% {
+                -webkit-transform: scaleY(1);
+                transform: scaleY(1);
+            }
+        }
+
+        @keyframes wang {
+
+            0%,
+            20%,
+            100% {
+                -webkit-transform: scaleY(0.4);
+                transform: scaleY(0.4);
+            }
+
+            40% {
+                -webkit-transform: scaleY(1);
+                transform: scaleY(1);
+            }
+        }
+    </style>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        document.onreadystatechange = function () {
+            console.log(document.readyState)
+            if (document.readyState == "complete") {
+                $(".loding").fadeOut();
+            } else {
+                console.log("加载中。。。")
+            }
+        } 
+    </script>
+</head>
+
+<body>
+    <div class="loding">
+        <div class="box">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1536901766856-5d45744cd180?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e59848af4fb8be676daabd946b1d02a2&w=1000&q=80" alt="">
+    <img src="https://images.unsplash.com/photo-1536873602512-8e88cc8398b1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=60a351868d0839e686c8c5a286265f8d&w=1000&q=80" alt="">
+    <img src="https://images.unsplash.com/photo-1534581764081-fda460ef1034?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4f3137a5a5a19e7f1cf35a9ffde43a5e&auto=format&fit=crop&w=700&q=80" alt="">
+    <img src="https://images.unsplash.com/photo-1536067147722-33692458deb6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c797e26092db6982009b7015cdbd1a7b&auto=format&fit=crop&w=500&q=60" alt="">
+</body>
+
+</html>
