@@ -1,153 +1,153 @@
 
 @charset "UTF-8";
-.ani-arrow{animation:ani-arrow 1s 1 infinite linear}
-.ani-music{animation:ani-music 1s 1 infinite linear}
-.music-play-rotate{animation:music-play-rotate 1s 1 infinite linear}
-.fadeIn{animation:fadeIn 1s 1 infinite linear}
-.pacman-balls{animation:pacman-balls 1s 1 infinite linear}
-.zfadeIn{animation:zfadeIn 1s 1 infinite linear}
-.copyrightPageAnimShow{animation:copyrightPageAnimShow 1s 1 infinite linear}
-.copyrightPageAnimHide{animation:copyrightPageAnimHide 1s 1 infinite linear}
-.rotate{animation:rotate 1s 1 infinite linear}
-.rotateLeft{animation:rotateLeft 1s 1 infinite linear}
-.bounce{animation:bounce 1s 1 infinite linear}
-.flash{animation:flash 1s 1 infinite linear}
-.pulse{animation:pulse 1s 1 infinite linear}
-.rubberBand{animation:rubberBand 1s 1 infinite linear}
-.shake{animation:shake 1s 1 infinite linear}
-.swing{animation:swing 1s 1 infinite linear}
-.tada{animation:tada 1s 1 infinite linear}
-.wobble{animation:wobble 1s 1 infinite linear}
-.bounceIn{animation:bounceIn 1s 1 infinite linear}
-.bounceInUp{animation:bounceInUp 1s 1 infinite linear}
-.bounceInLeft{animation:bounceInLeft 1s 1 infinite linear}
-.bounceInRight{animation:bounceInRight 1s 1 infinite linear}
-.bounceInRightUp{animation:bounceInRightUp 1s 1 infinite linear}
-.bounceInLeftUp{animation:bounceInLeftUp 1s 1 infinite linear}
-.bounceInRightDown{animation:bounceInRightDown 1s 1 infinite linear}
-.bounceInLeftDown{animation:bounceInLeftDown 1s 1 infinite linear}
-.bounceInDown{animation:bounceInDown 1s 1 infinite linear}
-.bounceOut{animation:bounceOut 1s 1 infinite linear}
-.bounceOutDown{animation:bounceOutDown 1s 1 infinite linear}
-.bounceOutLeft{animation:bounceOutLeft 1s 1 infinite linear}
-.bounceOutRight{animation:bounceOutRight 1s 1 infinite linear}
-.bounceOutRightUp{animation:bounceOutRightUp 1s 1 infinite linear}
-.bounceOutLeftUp{animation:bounceOutLeftUp 1s 1 infinite linear}
-.bounceOutRightDown{animation:bounceOutRightDown 1s 1 infinite linear}
-.bounceOutLeftDown{animation:bounceOutLeftDown 1s 1 infinite linear}
-.bounceOutUp{animation:bounceOutUp 1s 1 infinite linear}
-.fadeIn{animation:fadeIn 1s 1 infinite linear}
-.fadeInDown{animation:fadeInDown 1s 1 infinite linear}
-.fadeInLeftDown{animation:fadeInLeftDown 1s 1 infinite linear}
-.fadeInRightDown{animation:fadeInRightDown 1s 1 infinite linear}
-.fadeInLeftUp{animation:fadeInLeftUp 1s 1 infinite linear}
-.fadeInRightUp{animation:fadeInRightUp 1s 1 infinite linear}
-.fadeInDownBig{animation:fadeInDownBig 1s 1 infinite linear}
-.fadeInLeft{animation:fadeInLeft 1s 1 infinite linear}
-.fadeInLeftBig{animation:fadeInLeftBig 1s 1 infinite linear}
-.fadeInRight{animation:fadeInRight 1s 1 infinite linear}
-.fadeInRightBig{animation:fadeInRightBig 1s 1 infinite linear}
-.fadeInUp{animation:fadeInUp 1s 1 infinite linear}
-.fadeInUpBig{animation:fadeInUpBig 1s 1 infinite linear}
-.fadeOut{animation:fadeOut 1s 1 infinite linear}
-.moveInLeft{animation:moveInLeft 1s 1 infinite linear}
-.moveInRight{animation:moveInRight 1s 1 infinite linear}
-.moveInUp{animation:moveInUp 1s 1 infinite linear}
-.moveInDown{animation:moveInDown 1s 1 infinite linear}
-.fadeOutDown{animation:fadeOutDown 1s 1 infinite linear}
-.fadeOutLeftDown{animation:fadeOutLeftDown 1s 1 infinite linear}
-.fadeOutRightDown{animation:fadeOutRightDown 1s 1 infinite linear}
-.fadeOutDownBig{animation:fadeOutDownBig 1s 1 infinite linear}
-.fadeOutLeft{animation:fadeOutLeft 1s 1 infinite linear}
-.fadeOutLeftBig{animation:fadeOutLeftBig 1s 1 infinite linear}
-.fadeOutRight{animation:fadeOutRight 1s 1 infinite linear}
-.fadeOutRightBig{animation:fadeOutRightBig 1s 1 infinite linear}
-.fadeOutUp{animation:fadeOutUp 1s 1 infinite linear}
-.fadeOutLeftUp{animation:fadeOutLeftUp 1s 1 infinite linear}
-.fadeOutRightUp{animation:fadeOutRightUp 1s 1 infinite linear}
-.fadeOutUpBig{animation:fadeOutUpBig 1s 1 infinite linear}
-.moveOutLeft{animation:moveOutLeft 1s 1 infinite linear}
-.moveOutRight{animation:moveOutRight 1s 1 infinite linear}
-.moveOutUp{animation:moveOutUp 1s 1 infinite linear}
-.moveOutDown{animation:moveOutDown 1s 1 infinite linear}
-.flip{animation:flip 1s 1 infinite linear}
-.flipInX{animation:flipInX 1s 1 infinite linear}
-.flipInY{animation:flipInY 1s 1 infinite linear}
-.flipInHorizontal{animation:flipInHorizontal 1s 1 infinite linear}
-.boingIn{animation:boingIn 1s 1 infinite linear}
-.flipOutX{animation:flipOutX 1s 1 infinite linear}
-.flipOutY{animation:flipOutY 1s 1 infinite linear}
-.lightSpeedInRight{animation:lightSpeedInRight 1s 1 infinite linear}
-.lightSpeedInLeft{animation:lightSpeedInLeft 1s 1 infinite linear}
-.lightSpeedOut{animation:lightSpeedOut 1s 1 infinite linear}
-.rotateIn{animation:rotateIn 1s 1 infinite linear}
-.rotateInRight{animation:rotateInRight 1s 1 infinite linear}
-.rotateInLeft{animation:rotateInLeft 1s 1 infinite linear}
-.rotateInLeftDown{animation:rotateInLeftDown 1s 1 infinite linear}
-.rotateInRightDown{animation:rotateInRightDown 1s 1 infinite linear}
-.rotateInLeftUp{animation:rotateInLeftUp 1s 1 infinite linear}
-.rotateInRightUp{animation:rotateInRightUp 1s 1 infinite linear}
-.rotateOut{animation:rotateOut 1s 1 infinite linear}
-.rotateOutDownLeft{animation:rotateOutDownLeft 1s 1 infinite linear}
-.rotateOutDownRight{animation:rotateOutDownRight 1s 1 infinite linear}
-.rotateOutUpLeft{animation:rotateOutUpLeft 1s 1 infinite linear}
-.rotateOutUpRight{animation:rotateOutUpRight 1s 1 infinite linear}
-.hinge{animation:hinge 1s 1 infinite linear}
-.rollIn{animation:rollIn 1s 1 infinite linear}
-.rollOut{animation:rollOut 1s 1 infinite linear}
-.zoomIn{animation:zoomIn 1s 1 infinite linear}
-.bigIn{animation:bigIn 1s 1 infinite linear}
-.zoomInDown{animation:zoomInDown 1s 1 infinite linear}
-.zoomInLeft{animation:zoomInLeft 1s 1 infinite linear}
-.zoomInRight{animation:zoomInRight 1s 1 infinite linear}
-.zoomInUp{animation:zoomInUp 1s 1 infinite linear}
-.zoomOut{animation:zoomOut 1s 1 infinite linear}
-.zoomOutDown{animation:zoomOutDown 1s 1 infinite linear}
-.zoomOutLeft{animation:zoomOutLeft 1s 1 infinite linear}
-.zoomOutRight{animation:zoomOutRight 1s 1 infinite linear}
-.zoomOutUp{animation:zoomOutUp 1s 1 infinite linear}
-.slideInDown{animation:slideInDown 1s 1 infinite linear}
-.slideInLeft{animation:slideInLeft 1s 1 infinite linear}
-.slideInRight{animation:slideInRight 1s 1 infinite linear}
-.slideInUp{animation:slideInUp 1s 1 infinite linear}
-.slideOutDown{animation:slideOutDown 1s 1 infinite linear}
-.slideOutLeft{animation:slideOutLeft 1s 1 infinite linear}
-.slideOutRight{animation:slideOutRight 1s 1 infinite linear}
-.slideOutUp{animation:slideOutUp 1s 1 infinite linear}
-.rotateInZoom{animation:rotateInZoom 1s 1 infinite linear}
-.rotateInZoom2{animation:rotateInZoom2 1s 1 infinite linear}
-.flip3d{animation:flip3d 1s 1 infinite linear}
-.jello{animation:jello 1s 1 infinite linear}
-.lightSpeedOut{animation:lightSpeedOut 1s 1 infinite linear}
-.lightSpeedOut{animation:lightSpeedOut 1s 1 infinite linear}
-.zoomOutDown{animation:zoomOutDown 1s 1 infinite linear}
-.zoomOutLeft{animation:zoomOutLeft 1s 1 infinite linear}
-.zoomOutRight{animation:zoomOutRight 1s 1 infinite linear}
-.zoomOutUp{animation:zoomOutUp 1s 1 infinite linear}
-.slideInDown{animation:slideInDown 1s 1 infinite linear}
-.hinge{animation:hinge 1s 1 infinite linear}
-.twisterInDown{animation:twisterInDown 1s 1 infinite linear}
-.twisterInUp{animation:twisterInUp 1s 1 infinite linear}
-.boingOutDown{animation:boingOutDown 1s 1 infinite linear}
-.perspectiveDownRetourn{animation:perspectiveDownRetourn 1s 1 infinite linear}
-.perspectiveLeftRetourn{animation:perspectiveLeftRetourn 1s 1 infinite linear}
-.perspectiveRightRetourn{animation:perspectiveRightRetourn 1s 1 infinite linear}
-.perspectiveUpRetourn{animation:perspectiveUpRetourn 1s 1 infinite linear}
-.puffOut{animation:puffOut 1s 1 infinite linear}
-.puffIn{animation:puffIn 1s 1 infinite linear}
-.holeOut{animation:holeOut 1s 1 infinite linear}
-.swapRight{animation:swapRight 1s 1 infinite linear}
-.swapLeft{animation:swapLeft 1s 1 infinite linear}
-.slideDown{animation:slideDown 1s 1 infinite linear}
-.slideLeft{animation:slideLeft 1s 1 infinite linear}
-.slideRight{animation:slideRight 1s 1 infinite linear}
-.slideUp{animation:slideUp 1s 1 infinite linear}
-.dropShake{animation:dropShake 1s 1 infinite linear}
-.stretchRight{animation:stretchRight 1s 1 infinite linear}
-.stretchLeft{animation:stretchLeft 1s 1 infinite linear}
-.pullUp{animation:pullUp 1s 1 infinite linear}
-.pullDown{animation:pullDown 1s 1 infinite linear}
-.line-spin-fade-loader{animation:line-spin-fade-loader 1s 1 infinite linear}
+.ani-arrow{animation:ani-arrow 1s}
+.ani-music{animation:ani-music 1s}
+.music-play-rotate{animation:music-play-rotate 1s}
+.fadeIn{animation:fadeIn 1s}
+.pacman-balls{animation:pacman-balls 1s}
+.zfadeIn{animation:zfadeIn 1s}
+.copyrightPageAnimShow{animation:copyrightPageAnimShow 1s}
+.copyrightPageAnimHide{animation:copyrightPageAnimHide 1s}
+.rotate{animation:rotate 1s}
+.rotateLeft{animation:rotateLeft 1s}
+.bounce{animation:bounce 1s}
+.flash{animation:flash 1s}
+.pulse{animation:pulse 1s}
+.rubberBand{animation:rubberBand 1s}
+.shake{animation:shake 1s}
+.swing{animation:swing 1s}
+.tada{animation:tada 1s}
+.wobble{animation:wobble 1s}
+.bounceIn{animation:bounceIn 1s}
+.bounceInUp{animation:bounceInUp 1s}
+.bounceInLeft{animation:bounceInLeft 1s}
+.bounceInRight{animation:bounceInRight 1s}
+.bounceInRightUp{animation:bounceInRightUp 1s}
+.bounceInLeftUp{animation:bounceInLeftUp 1s}
+.bounceInRightDown{animation:bounceInRightDown 1s}
+.bounceInLeftDown{animation:bounceInLeftDown 1s}
+.bounceInDown{animation:bounceInDown 1s}
+.bounceOut{animation:bounceOut 1s}
+.bounceOutDown{animation:bounceOutDown 1s}
+.bounceOutLeft{animation:bounceOutLeft 1s}
+.bounceOutRight{animation:bounceOutRight 1s}
+.bounceOutRightUp{animation:bounceOutRightUp 1s}
+.bounceOutLeftUp{animation:bounceOutLeftUp 1s}
+.bounceOutRightDown{animation:bounceOutRightDown 1s}
+.bounceOutLeftDown{animation:bounceOutLeftDown 1s}
+.bounceOutUp{animation:bounceOutUp 1s}
+.fadeIn{animation:fadeIn 1s}
+.fadeInDown{animation:fadeInDown 1s}
+.fadeInLeftDown{animation:fadeInLeftDown 1s}
+.fadeInRightDown{animation:fadeInRightDown 1s}
+.fadeInLeftUp{animation:fadeInLeftUp 1s}
+.fadeInRightUp{animation:fadeInRightUp 1s}
+.fadeInDownBig{animation:fadeInDownBig 1s}
+.fadeInLeft{animation:fadeInLeft 1s}
+.fadeInLeftBig{animation:fadeInLeftBig 1s}
+.fadeInRight{animation:fadeInRight 1s}
+.fadeInRightBig{animation:fadeInRightBig 1s}
+.fadeInUp{animation:fadeInUp 1s}
+.fadeInUpBig{animation:fadeInUpBig 1s}
+.fadeOut{animation:fadeOut 1s}
+.moveInLeft{animation:moveInLeft 1s}
+.moveInRight{animation:moveInRight 1s}
+.moveInUp{animation:moveInUp 1s}
+.moveInDown{animation:moveInDown 1s}
+.fadeOutDown{animation:fadeOutDown 1s}
+.fadeOutLeftDown{animation:fadeOutLeftDown 1s}
+.fadeOutRightDown{animation:fadeOutRightDown 1s}
+.fadeOutDownBig{animation:fadeOutDownBig 1s}
+.fadeOutLeft{animation:fadeOutLeft 1s}
+.fadeOutLeftBig{animation:fadeOutLeftBig 1s}
+.fadeOutRight{animation:fadeOutRight 1s}
+.fadeOutRightBig{animation:fadeOutRightBig 1s}
+.fadeOutUp{animation:fadeOutUp 1s}
+.fadeOutLeftUp{animation:fadeOutLeftUp 1s}
+.fadeOutRightUp{animation:fadeOutRightUp 1s}
+.fadeOutUpBig{animation:fadeOutUpBig 1s}
+.moveOutLeft{animation:moveOutLeft 1s}
+.moveOutRight{animation:moveOutRight 1s}
+.moveOutUp{animation:moveOutUp 1s}
+.moveOutDown{animation:moveOutDown 1s}
+.flip{animation:flip 1s}
+.flipInX{animation:flipInX 1s}
+.flipInY{animation:flipInY 1s}
+.flipInHorizontal{animation:flipInHorizontal 1s}
+.boingIn{animation:boingIn 1s}
+.flipOutX{animation:flipOutX 1s}
+.flipOutY{animation:flipOutY 1s}
+.lightSpeedInRight{animation:lightSpeedInRight 1s}
+.lightSpeedInLeft{animation:lightSpeedInLeft 1s}
+.lightSpeedOut{animation:lightSpeedOut 1s}
+.rotateIn{animation:rotateIn 1s}
+.rotateInRight{animation:rotateInRight 1s}
+.rotateInLeft{animation:rotateInLeft 1s}
+.rotateInLeftDown{animation:rotateInLeftDown 1s}
+.rotateInRightDown{animation:rotateInRightDown 1s}
+.rotateInLeftUp{animation:rotateInLeftUp 1s}
+.rotateInRightUp{animation:rotateInRightUp 1s}
+.rotateOut{animation:rotateOut 1s}
+.rotateOutDownLeft{animation:rotateOutDownLeft 1s}
+.rotateOutDownRight{animation:rotateOutDownRight 1s}
+.rotateOutUpLeft{animation:rotateOutUpLeft 1s}
+.rotateOutUpRight{animation:rotateOutUpRight 1s}
+.hinge{animation:hinge 1s}
+.rollIn{animation:rollIn 1s}
+.rollOut{animation:rollOut 1s}
+.zoomIn{animation:zoomIn 1s}
+.bigIn{animation:bigIn 1s}
+.zoomInDown{animation:zoomInDown 1s}
+.zoomInLeft{animation:zoomInLeft 1s}
+.zoomInRight{animation:zoomInRight 1s}
+.zoomInUp{animation:zoomInUp 1s}
+.zoomOut{animation:zoomOut 1s}
+.zoomOutDown{animation:zoomOutDown 1s}
+.zoomOutLeft{animation:zoomOutLeft 1s}
+.zoomOutRight{animation:zoomOutRight 1s}
+.zoomOutUp{animation:zoomOutUp 1s}
+.slideInDown{animation:slideInDown 1s}
+.slideInLeft{animation:slideInLeft 1s}
+.slideInRight{animation:slideInRight 1s}
+.slideInUp{animation:slideInUp 1s}
+.slideOutDown{animation:slideOutDown 1s}
+.slideOutLeft{animation:slideOutLeft 1s}
+.slideOutRight{animation:slideOutRight 1s}
+.slideOutUp{animation:slideOutUp 1s}
+.rotateInZoom{animation:rotateInZoom 1s}
+.rotateInZoom2{animation:rotateInZoom2 1s}
+.flip3d{animation:flip3d 1s}
+.jello{animation:jello 1s}
+.lightSpeedOut{animation:lightSpeedOut 1s}
+.lightSpeedOut{animation:lightSpeedOut 1s}
+.zoomOutDown{animation:zoomOutDown 1s}
+.zoomOutLeft{animation:zoomOutLeft 1s}
+.zoomOutRight{animation:zoomOutRight 1s}
+.zoomOutUp{animation:zoomOutUp 1s}
+.slideInDown{animation:slideInDown 1s}
+.hinge{animation:hinge 1s}
+.twisterInDown{animation:twisterInDown 1s}
+.twisterInUp{animation:twisterInUp 1s}
+.boingOutDown{animation:boingOutDown 1s}
+.perspectiveDownRetourn{animation:perspectiveDownRetourn 1s}
+.perspectiveLeftRetourn{animation:perspectiveLeftRetourn 1s}
+.perspectiveRightRetourn{animation:perspectiveRightRetourn 1s}
+.perspectiveUpRetourn{animation:perspectiveUpRetourn 1s}
+.puffOut{animation:puffOut 1s}
+.puffIn{animation:puffIn 1s}
+.holeOut{animation:holeOut 1s}
+.swapRight{animation:swapRight 1s}
+.swapLeft{animation:swapLeft 1s}
+.slideDown{animation:slideDown 1s}
+.slideLeft{animation:slideLeft 1s}
+.slideRight{animation:slideRight 1s}
+.slideUp{animation:slideUp 1s}
+.dropShake{animation:dropShake 1s}
+.stretchRight{animation:stretchRight 1s}
+.stretchLeft{animation:stretchLeft 1s}
+.pullUp{animation:pullUp 1s}
+.pullDown{animation:pullDown 1s}
+.line-spin-fade-loader{animation:line-spin-fade-loader 1s}
 
 @-webkit-keyframes ani-arrow {
 	0%,30% {
