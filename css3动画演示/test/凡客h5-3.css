@@ -1,0 +1,671 @@
+@keyframes textflash {
+.textshake {
+    animation: 
+}
+.translationLeft {
+    animation: 
+}
+.translationRight {
+    animation: 
+}
+.translationUp {
+    animation: 
+}
+.translationDown {
+    animation: 
+}
+.textfloat {
+    animation: 
+}
+.textemphashake {
+    animation: 
+}
+.textbounce {
+    animation: 
+}
+.textemphabounce {
+    animation: 
+}
+.texttada {
+    animation: 
+}
+.textemphatada {
+    animation: 
+}
+.textswing {
+    animation: 
+}
+.textwobble {
+    animation: 
+}
+.textemphawobble {
+    animation: 
+}
+.textpulse {
+    animation: 
+}
+.textemphapulse {
+    animation: 
+}
+.textflip {
+    animation: 
+}
+.textflipInX {
+    animation: 
+}
+.textflipOutX {
+    animation: 
+}
+.textflipInY {
+    animation: 
+}
+.textflipOutY {
+    animation: 
+}
+.textfadeIn {
+    animation: 
+}
+.textfadeInUp {
+    animation: 
+}
+.textfadeInDown {
+    animation: 
+}
+.textfadeInLeft {
+    animation: 
+}
+.textfadeInRight {
+    animation: 
+}
+.textfadeInUpBig {
+    animation: 
+}
+.textfadeInDownBig {
+    animation: 
+}
+.textfadeInLeftBig {
+    animation: 
+}
+.textfadeInRightBig {
+    animation: 
+}
+.textfadeOut {
+    animation: 
+}
+.textfadeOutUp {
+    animation: 
+}
+.textfadeOutDown {
+    animation: 
+}
+.textfadeOutLeft {
+    animation: 
+}
+.textfadeOutRight {
+    animation: 
+}
+.textfadeOutUpBig {
+    animation: 
+}
+.textfadeOutDownBig {
+    animation: 
+}
+.textfadeOutLeftBig {
+    animation: 
+}
+.textfadeOutRightBig {
+    animation: 
+}
+.textbounceIn {
+    animation: 
+}
+.textemphabounceIn {
+    animation: 
+}
+.textbounceInUp {
+    animation: 
+}
+.textbounceInDown {
+    animation: 
+}
+.textbounceInLeft {
+    animation: 
+}
+.textbounceInRight {
+    animation: 
+}
+.textbounceOut {
+    animation: 
+}
+.textbounceOutUp {
+    animation: 
+}
+.textbounceOutDown {
+    animation: 
+}
+.textbounceOutLeft {
+    animation: 
+}
+.textbounceOutRight {
+    animation: 
+}
+.textrotateIn {
+    animation: 
+}
+.textrotateInUpLeft {
+    animation: 
+}
+.textrotateInDownLeft {
+    animation: 
+}
+.textrotateInUpRight {
+    animation: 
+}
+.textrotateInDownRight {
+    animation: 
+}
+.textrotateOut {
+    animation: 
+}
+.textrotateOutUpLeft {
+    animation: 
+}
+.textrotateOutDownLeft {
+    animation: 
+}
+.textrotateOutUpRight {
+    animation: 
+}
+.textrotateOutDownRight {
+    animation: 
+}
+.texthinge {
+    animation: 
+}
+.textrollIn {
+    animation: 
+}
+.textrollOut {
+    animation: 
+}
+.textlightSpeedIn {
+    animation: 
+}
+.textlightSpeedOut {
+    animation: 
+}
+.textwiggle {
+    animation: 
+}
+.expandOpen {
+    animation: 
+}
+.rollIn {
+    animation: 
+}
+.rollOut {
+    animation: 
+}
+.fadeAnimate {
+    animation: 
+}
+.likeMoveUp {
+    animation: 
+}
+.showLikeIconFull {
+    animation: 
+}
+.fadeInNormal {
+    animation: 
+}
+.fadeIn {
+    animation: 
+}
+.zoomIn {
+    animation: 
+}
+.fadeInLeft {
+    animation: 
+}
+.fadeInRight {
+    animation: 
+}
+.fadeInUp {
+    animation: 
+}
+.fadeInDown {
+    animation: 
+}
+.amoveRight {
+    animation: 
+}
+.moveRight {
+    animation: 
+}
+.moveLeft {
+    animation: 
+}
+.moveVRLeft {
+    animation: 
+}
+.moveUp {
+    animation: 
+}
+.moveDown {
+    animation: 
+}
+.slideLeft {
+    animation: 
+}
+.slideRight {
+    animation: 
+}
+.slideUp {
+    animation: 
+}
+.slideDown {
+    animation: 
+}
+.stretchRight {
+    animation: 
+}
+.stretchLeft {
+    animation: 
+}
+.pullUp {
+    animation: 
+}
+.pullDown {
+    animation: 
+}
+.zoomInLeft {
+    animation: 
+}
+.zoomInRight {
+    animation: 
+}
+.zoomInUp {
+    animation: 
+}
+.zoomInDown {
+    animation: 
+}
+.rotateInDownLeft {
+    animation: 
+}
+.rotateInDownRight {
+    animation: 
+}
+.rotateInUpLeft {
+    animation: 
+}
+.rotateInUpRight {
+    animation: 
+}
+.lightSpeedIn {
+    animation: 
+}
+.flipInX {
+    animation: 
+}
+.flipInY {
+    animation: 
+}
+.rotateIn {
+    animation: 
+}
+.rollIn {
+    animation: 
+}
+.noeffect {
+    animation: 
+}
+.noexiteffect {
+    animation: 
+}
+.bounce {
+    animation: 
+}
+.flash {
+    animation: 
+}
+.pulse {
+    animation: 
+}
+.rubberBand {
+    animation: 
+}
+.shake {
+    animation: 
+}
+.flyerShake {
+    animation: 
+}
+.swing {
+    animation: 
+}
+.tada {
+    animation: 
+}
+.wobble {
+    animation: 
+}
+.jello {
+    animation: 
+}
+.flipIn {
+    animation: 
+}
+.rotating {
+    animation: 
+}
+.uniformlyRotating {
+    animation: 
+}
+.fadeOut {
+    animation: 
+}
+.bounceOut {
+    animation: 
+}
+.zoomOut {
+    animation: 
+}
+.rotateOut {
+    animation: 
+}
+.hinge {
+    animation: 
+}
+.lightSpeedOut {
+    animation: 
+}
+.flipOutX {
+    animation: 
+}
+.flipOutY {
+    animation: 
+}
+.fadeOutRight {
+    animation: 
+}
+.fadeOutLeft {
+    animation: 
+}
+.fadeOutUp {
+    animation: 
+}
+.fadeOutDown {
+    animation: 
+}
+.fadeOutRightBig {
+    animation: 
+}
+.fadeOutLeftBig {
+    animation: 
+}
+.fadeOutUpBig {
+    animation: 
+}
+.fadeOutDownBig {
+    animation: 
+}
+.bounceOutLeft {
+    animation: 
+}
+.bounceOutRight {
+    animation: 
+}
+.bounceOutUp {
+    animation: 
+}
+.bounceOutDown {
+    animation: 
+}
+.rotateOutUpRight {
+    animation: 
+}
+.rotateOutUpLeft {
+    animation: 
+}
+.rotateOutDownRight {
+    animation: 
+}
+.rotateOutDownLeft {
+    animation: 
+}
+.zoomOutUp {
+    animation: 
+}
+.zoomOutDown {
+    animation: 
+}
+.zoomOutLeft {
+    animation: 
+}
+.zoomOutRight {
+    animation: 
+}
+.scaleTopIn {
+    animation: 
+}
+.scaleBottomIn {
+    animation: 
+}
+.scaleLeftIn {
+    animation: 
+}
+.scaleRightIn {
+    animation: 
+}
+.scaleOut {
+    animation: 
+}
+.pushLeftOut {
+    animation: 
+}
+.pushRightOut {
+    animation: 
+}
+.pushTopOut {
+    animation: 
+}
+.pushBottomOut {
+    animation: 
+}
+.pullRightIn {
+    animation: 
+}
+.pullLeftIn {
+    animation: 
+}
+.pullTopIn {
+    animation: 
+}
+.pullBottomIn {
+    animation: 
+}
+.pageFadeUp {
+    animation: 
+}
+.pageFadeIn {
+    animation: 
+}
+.zoomCoverOut {
+    animation: 
+}
+.zoomCoverIn {
+    animation: 
+}
+.zoomCoverReverseIn {
+    animation: 
+}
+.zoomCoverReverseOut {
+    animation: 
+}
+.bgFilterTo1 {
+    animation: 
+}
+.bgFilterTo2 {
+    animation: 
+}
+.bgFilterTo3 {
+    animation: 
+}
+.bgFilterTo4 {
+    animation: 
+}
+.bgFilterTo5 {
+    animation: 
+}
+.bgFilterTo6 {
+    animation: 
+}
+.bgFilterTo7 {
+    animation: 
+}
+.bgFilterBack1 {
+    animation: 
+}
+.bgFilterBack2 {
+    animation: 
+}
+.bgFilterBack3 {
+    animation: 
+}
+.bgFilterBack4 {
+    animation: 
+}
+.bgFilterBack5 {
+    animation: 
+}
+.bgFilterBack6 {
+    animation: 
+}
+.bgFilterBack7 {
+    animation: 
+}
+.swiper_rotateIn {
+    animation: 
+}
+.swiper_rotateOut {
+    animation: 
+}
+.flipOutRight {
+    animation: 
+}
+.flipInLeft {
+    animation: 
+}
+.flipOutLeft {
+    animation: 
+}
+.flipInRight {
+    animation: 
+}
+.flipOutTop {
+    animation: 
+}
+.flipInBottom {
+    animation: 
+}
+.flipOutBottom {
+    animation: 
+}
+.flipInTop {
+    animation: 
+}
+._flipInY {
+    animation: 
+}
+._flipInX {
+    animation: 
+}
+.flipOutY {
+    animation: 
+}
+.flipOutX {
+    animation: 
+}
+.rotateCubeLeftOut {
+    animation: 
+}
+.rotateCubeLeftIn {
+    animation: 
+}
+.rotateCubeRightOut {
+    animation: 
+}
+.rotateCubeRightIn {
+    animation: 
+}
+.rotateCubeTopOut {
+    animation: 
+}
+.rotateCubeTopIn {
+    animation: 
+}
+.rotateCubeBottomOut {
+    animation: 
+}
+.rotateCubeBottomIn {
+    animation: 
+}
+.swiper_containerScale {
+    animation: 
+}
+.swiper_container_big {
+    animation: 
+}
+.gotoBottomAni {
+    animation: 
+}
+.gotoFloatAni {
+    animation: 
+}
+.startAnimation {
+    animation: 
+}
+.ld-heartbeat {
+    animation: 
+}
+.ld-float {
+    animation: 
+}
+.ld-coin-h {
+    animation: 
+}
+.ld-shadow {
+    animation: 
+}
+.ld-bounce {
+    animation: 
+}
+.ld-wander-h {
+    animation: 
+}
+.ld-cycle {
+    animation: 
+}
+.ld-jelly {
+    animation: 
+}
+.ld-broadcast {
+    animation: 
+}
+.ld-jump {
+    animation: 
+}
+.ld-blur {
+    animation: 
+}
+.ld-tremble {
+    animation: 
+}
+.ld-clock {
+    animation: 
+}
+.ld-squeeze {
+    animation: 
+}
+    
