@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>随机生成四位密码</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul,li,ol {
+            list-style: none;
+        }
+
+        .box {
+            overflow: hidden;
+        }
+
+        .box li {
+            float: left;
+        }
+
+    </style>
+    <script src="../js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            for (var i = 0; i < 5000; i++) {
+                var img = `<li><img src="http://mobile.gome.com.cn/mobile/global/captcha.jsp?type=gome_sale_activities&capCd=89efb31b87f14e85ba46f8c757d36d8a&width=100&height=30&reflushKey=0.71822226&` + i + `" alt=""></li>`
+                $(".box").append(img)
+            }
+        })
+    </script>
+</head>
+<body>
+    <ul class="box"></ul>
+</body>
+</html>
