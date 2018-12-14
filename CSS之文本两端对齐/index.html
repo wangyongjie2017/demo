@@ -1,19 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CSS之文本两端对齐</title>
     <style>
-        
-    
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            padding: 15px 0;
+        }
+
+        .wrap {
+            width: 990px;
+            padding: 10px;
+            margin: 0 auto;
+            box-shadow: 1px 1px 50px 1px #ccc, -1px 1px 50px 1px #ccc, 1px -1px 50px 1px #ccc, -1px -1px 50px 1px #ccc;
+        }
+
+        .wrap h4 {
+            text-indent: 2em;
+            margin: 0 0 1.64em 0;
+            border-left: 3px solid #e67e22;
+            padding-left: 12px;
+            color: #666666;
+            background: #ccc;
+        }
+
+        .wrap h3 {
+            line-height: 40px;
+            color: #2196f3;
+        }
+
+        /* 样式 */
+        .wrap .box {
+            color: #ccc;
+        }
+
+        .wrap .box1 p {
+            text-align: left;
+        }
+
+        .wrap .box2 p {
+            text-align: justify;
+        }
+
+        .wrap .box3 p {
+            text-align-last: justify;
+        }
     </style>
 </head>
+
 <body>
-    <h4>说起text-align，大家一定都不觉得陌生，我们常用关键字left、right、center实现行内元素相对父元素左、右、居中对齐，当然我们也使用justify来实现文本两端对齐。</h4>
-    <div class="box1">
-        <p></p>
+    <h1>CSS之文本两端对齐</h1>
+    <div class="wrap">
+        <h4>说起text-align，大家一定都不觉得陌生，我们常用关键字left、right、center实现行内元素相对父元素左、右、居中对齐，当然我们也使用justify来实现文本两端对齐。</h4>
+        <div class="box box1">
+            <h3>text-align:left; 效果</h3>
+            <p>站在时光的转角，以一种花开的姿态，静看日升月落，随意春去秋来！心柔若水，情深若痴，没有闭月羞花之容，不得沉鱼落雁之貌，我只是那红尘深处的多情女子，上善若水，真诚予人！万顷碧波，只取一滴净水，满目山河空念远，不如怜取眼前人！三千青丝亦是绾尽三千痴缠，凝神思忖，独坐如莲，冰冷纤指轻抚琴弦，弹拨一曲高山流水觅知音，若有人懂，请与我共谱一曲琴瑟和鸣，若是不懂，请如微风拂过，过而无痕！心若相知，无言也默契；情若相眷，不语也怜惜！</p>
+        </div>
+        <div class="box box2">
+            <h3>text-align:justify; 效果</h3>
+            <p>站在时光的转角，以一种花开的姿态，静看日升月落，随意春去秋来！心柔若水，情深若痴，没有闭月羞花之容，不得沉鱼落雁之貌，我只是那红尘深处的多情女子，上善若水，真诚予人！万顷碧波，只取一滴净水，满目山河空念远，不如怜取眼前人！三千青丝亦是绾尽三千痴缠，凝神思忖，独坐如莲，冰冷纤指轻抚琴弦，弹拨一曲高山流水觅知音，若有人懂，请与我共谱一曲琴瑟和鸣，若是不懂，请如微风拂过，过而无痕！心若相知，无言也默契；情若相眷，不语也怜惜！</p>
+        </div>
+        <p>如上，两端对齐(text-align: justify;)相对于左对齐(text-align:
+            left;)，视觉上显得整齐有序。但justify对最后一行无效，通常这样的排版对整段文字是极好的，我们并不希望当最后一行只有两个字时也两端对齐，毕竟这是不便于阅读的，那么当我们只有一行文本，但要实现单行文本两端对齐怎么解决</p>
+        <div class="box box3">
+            <h3>text-align-last:justify; 效果</h3>
+            <p>站在时光的转角，以一种花开的姿态，静看日升月落，随意春去秋来！</p>
+        </div>
+
     </div>
+
 </body>
+
 </html>
