@@ -1,6 +1,6 @@
 # 代码练习
 ## 一、 慕课网课程demo示例
-### 1. [网页加载进度条](http://wangyongjie.top/demo/网页加载进度条/css动画.html)
+### 1. [网页加载进度条](http://wangyongjie.top/demo/网页加载进度条)
 ### 2. [凡客版本动画](http://wangyongjie.top/demo/css3动画演示/凡客版本动画.html)
 ### 3. [官方版本动画](http://wangyongjie.top/demo/css3动画演示/官方版本动画.html)
 ### 4. [后台版本动画](http://wangyongjie.top/demo/css3动画演示/后台版本动画.html)
