@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .box {
+            border: 1px solid red;
+        }
+
+        .box ul {
+            border: 1px solid #000;
+            margin: 10px;
+        }
+    </style>
+    <!-- <script src="./js/jquery.min.js"></script> -->
+    <script>
+        window.onload = function () {
+            var box1 = document.querySelectorAll(".box ul");
+            for (var i = 0; i < box1.length; i++) {
+                var width1 = box1[i].offsetWidth;
+                var height1 = box1[i].offsetHeight;
+                console.log("标题" + i + "--->offsetWidth--->" + width1, "offsetHeight--->" + height1)
+
+                var width2 = box1[i].clientWidth;
+                var height2 = box1[i].clientHeight;
+                console.log("标题" + i + "--->clientWidth--->" + width2, "clientHeight--->" + height2)
+
+
+                var width3 = box1[i].scrollWidth;
+                var height3 = box1[i].scrollHeight;
+                console.log("标题" + i + "--->scrollWidth--->" + width3, "scrollHeight--->" + height3)
+
+
+                var width4 = box1[i].style.width;
+                var height4 = box1[i].style.height;
+                console.log("标题" + i + "--->clientWidth--->" + width4, "clientHeight--->" + height4)
+                console.log("-------------------分割线-----------------------")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="box">
+        <ul class="box0" style="width:500px">
+            <li>
+                <h2>标题0</h2>
+                <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+            </li>
+        </ul>
+        <ul class="box1">
+            <li>
+                <h2>标题1</h2>
+                <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+            </li>
+        </ul>
+        <ul class="box2">
+            <li>
+                <h2>标题2</h2>
+                <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+                <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+            </li>
+        </ul>
+        <ul class="box3">
+            <li>
+                <h2>标题3</h2>
+                <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+            </li>
+        </ul>
+        <ul class="box4">
+            <li>
+                <h2>标题4</h2>
+                <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+            </li>
+        </ul>
+        <ul class="box5">
+            <li>
+                <h2>标题5</h2>
+                <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+
+
+
+</body>
+
+</html>

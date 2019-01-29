@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul,
+        li,
+        ol {
+            list-style: none;
+        }
+
+        body {
+            height: 100vh;
+            overflow: scroll;
+        }
+
+        span {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9;
+            background: red;
+        }
+
+        /*  */
+        .nav {
+            display: flex;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 50px;
+            background: #000
+        }
+
+        .nav li {
+            flex: 1;
+            border: 1px solid red;
+            margin: 0 10px;
+            color: #fff;
+        }
+
+        .box:nth-child(2) {
+            margin-top: 50px;
+        }
+
+        .active {
+            background: red;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var item = $(".box");
+            var itemTop = [];           //[50, 354, 658, 962, 1266, 1570, 1874, 2178, 2482, 2786]
+            for (var i = 0; i < item.length; i++) {
+                itemTop.push(item.eq(i).offset().top)
+                console.log(itemTop)
+            }
+
+            function app() {
+                $(window).scroll(function () {
+                    var b = $(window).scrollTop() + 50;
+                    for (var i = 0; i < item.length; i++) {
+                        if (itemTop[i] <= b) {
+                            $(".nav li").eq(i).addClass("active").siblings().removeClass("active");
+                        }
+                    }
+                    console.log(b)
+                })
+            } app()
+
+
+
+            $(".nav li").click(function () {
+                $(window).off("scroll", app());
+                var index = $(this).index();
+                $("body,html").animate({
+                    scrollTop: itemTop[index] - 50
+                }, 800);
+                $(this).addClass("active").siblings().removeClass("active");
+
+                setTimeout(function () {
+                    $(window).on('scroll', app());
+                }, 1000)
+            })
+
+        })
+
+    </script>
+</head>
+
+<body>
+    <ul class="nav">
+        <li class="active">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+    <ul class="box">
+        <li>
+            <h2>标题1</h2>
+            <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+        </li>
+    </ul>
+    <ul class="box">
+        <li>
+            <h2>标题2</h2>
+            <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+        </li>
+    </ul>
+    <ul class="box">
+        <li>
+            <h2>标题3</h2>
+            <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+        </li>
+    </ul>
+    <ul class="box">
+        <li>
+            <h2>标题4</h2>
+            <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+        </li>
+    </ul>
+    <ul class="box" id="box">
+        <li>
+            <h2>标题5</h2>
+            <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+        </li>
+    </ul>
+    <ul class="box">
+        <li>
+            <h2>标题6</h2>
+            <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+        </li>
+    </ul>
+    <ul class="box">
+        <li>
+            <h2>标题7</h2>
+            <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+        </li>
+    </ul>
+    <ul class="box">
+        <li>
+            <h2>标题8</h2>
+            <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+        </li>
+    </ul>
+    <ul class="box">
+        <li>
+            <h2>标题9</h2>
+            <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+        </li>
+    </ul>
+    <ul class="box">
+        <li>
+            <h2>标题10</h2>
+            <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+        </li>
+    </ul>
+
+
+    <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+    <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+    <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+    <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+    <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+    <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+    <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+    <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+    <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+    <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+    <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+    <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+    <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+    <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="">
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
