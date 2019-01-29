@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>获取元素到顶部和左部的距离</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            overflow: scroll;
+            border: 1px solid red;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var box1 = document.getElementsByClassName("box1")[0];
+            var list = document.getElementsByClassName("list");
+            var button = document.getElementById("btn");
+            var i = 10;
+            box1.onscroll = function () {
+                var box1Top = box1.offsetTop;
+                var box1Left = box1.offsetLeft;
+                console.log(".box1 offsetTop--->" + box1Top)
+                console.log(".box1 offsetLeft--->" + box1Left)
+                // 分割线
+                var box2Top = box1.scrollTop;
+                var box2Left = box1.scrollLeft;
+                console.log(".box1 scrollTop--->" + box2Top)
+                console.log(".box1 scrollLeft--->" + box2Left)
+                console.log("---------------分割线-----------------")
+
+
+                list[0].innerHTML = "offsetTop值：" + box1Top;
+                list[1].innerHTML = "offsetLeft值：" + box1Left;
+                list[2].innerHTML = "scrollTop值：" + box2Top;
+                list[3].innerHTML = "scrollLeft值：" + box2Left;
+            }
+
+
+            button.onclick = function () {
+                box1.scrollTop += i
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="box1">
+        “四个经得起”：经得起看，经得起考，经得起问，经得起查。公道正派，是一个人格情操、一种思想境界，是做人的第一修养、第一准则、第一信条。贪欲是修身养德的大敌。个人自重，不贪财、不贪色、不贪利；对人尊重，重人格、重劳动、重权益；办事稳重，讲原则、讲程序、讲效率。正直和诚实是安身立命的根本。“四个经得起”：经得起看，经得起考，经得起问，经得起查。公道正派，是一个人格情操、一种思想境界，是做人的第一修养、第一准则、第一信条。贪欲是修身养德的大敌。个人自重，不贪财、不贪色、不贪利；对人尊重，重人格、重劳动、重权益；办事稳重，讲原则、讲程序、讲效率。正直和诚实是安身立命的根本。“四个经得起”：经得起看，经得起考，经得起问，经得起查。公道正派，是一个人格情操、一种思想境界，是做人的第一修养、第一准则、第一信条。贪欲是修身养德的大敌。个人自重，不贪财、不贪色、不贪利；对人尊重，重人格、重劳动、重权益；办事稳重，讲原则、讲程序、讲效率。正直和诚实是安身立命的根本。“四个经得起”：经得起看，经得起考，经得起问，经得起查。公道正派，是一个人格情操、一种思想境界，是做人的第一修养、第一准则、第一信条。贪欲是修身养德的大敌。个人自重，不贪财、不贪色、不贪利；对人尊重，重人格、重劳动、重权益；办事稳重，讲原则、讲程序、讲效率。正直和诚实是安身立命的根本。“四个经得起”：经得起看，经得起考，经得起问，经得起查。公道正派，是一个人格情操、一种思想境界，是做人的第一修养、第一准则、第一信条。贪欲是修身养德的大敌。个人自重，不贪财、不贪色、不贪利；对人尊重，重人格、重劳动、重权益；办事稳重，讲原则、讲程序、讲效率。正直和诚实是安身立命的根本。“四个经得起”：经得起看，经得起考，经得起问，经得起查。公道正派，是一个人格情操、一种思想境界，是做人的第一修养、第一准则、第一信条。贪欲是修身养德的大敌。个人自重，不贪财、不贪色、不贪利；对人尊重，重人格、重劳动、重权益；办事稳重，讲原则、讲程序、讲效率。正直和诚实是安身立命的根本。
+    </div>
+    <button id="btn">scrollTop / 设置</button>
+    <p class="list"></p>
+    <p class="list"></p>
+    <p class="list"></p>
+    <p class="list"></p>
+
+</body>
+
+</html>
