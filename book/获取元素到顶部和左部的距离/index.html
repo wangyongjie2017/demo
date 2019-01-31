@@ -45,12 +45,30 @@
             }
 
 
-            btn[0].onclick = function () {
+
+            var up = function () {
                 box1.scrollTop += i
             }
 
-            btn[1].onclick = function () {
+            var down = function () {
                 box1.scrollTop -= i
+            }
+
+
+            btn[0].onclick = up
+
+            btn[1].onclick = down
+
+
+            var off = setInterval(up, 1000)
+            
+            btn[2].onclick = function () {
+                clearInterval(off)
+                off = setInterval(up, 1000)
+            }
+
+            btn[3].onclick = function () {
+                clearInterval(off)
             }
         }
 
@@ -63,6 +81,8 @@
     </div>
     <button id="btn">scrollTop ++/ 设置</button>
     <button id="btn">scrollTop --/ 设置</button>
+    <button id="stop">自动滚动</button>
+    <button id="open">关闭自动</button>
     <p class="list"></p>
     <p class="list"></p>
     <p class="list"></p>
