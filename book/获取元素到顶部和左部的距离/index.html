@@ -14,6 +14,8 @@
 
         .box1 {
             height: 200px;
+            margin: 20px;
+            padding: 20px;
             overflow: scroll;
             border: 1px solid red;
         }
@@ -23,7 +25,7 @@
             var box1 = document.getElementsByClassName("box1")[0];
             var list = document.getElementsByClassName("list");
             var btn = document.getElementsByTagName("button")
-            var i = 180;
+            var i = 1;
             box1.onscroll = function () {
                 var box1Top = box1.offsetTop;
                 var box1Left = box1.offsetLeft;
@@ -59,7 +61,7 @@
             btn[1].onclick = down
 
 
-            var off = setInterval(up, 1000)
+            var off = setInterval(up, 100)
             
             btn[2].onclick = function () {
                 clearInterval(off)
