@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            width:500px;
+            height: 500px;
+            background: pink;
+            margin: 0 auto;
+        }
+    </style>
+    <script>
+        function test(event) {
+            event = event || window.event;
+            if (event.keyCode == 13) {
+                alert("你按了回车")
+            }
+            if (event.shiftKey == true) {
+                alert("你按了shift")
+            }
+            if (event.ctrlKey == true) {
+                alert("你按了ctrl")
+            }
+            if (event.altKey == true) {
+                alert("你按了alt")
+            }
+        } 
+    </script>
+</head>
+
+
+
+<body>
+    <div class="box" onkeydown="test(event)">
+
+    </div>
+
+    <input type="text" class="box" onkeydown="test(event)">
+
+
+
+
+
+
+
+
+</body>
+
+</html>
