@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>获取元素到顶部和左部的距离</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            width: 400px;
+            height: 500px;
+            border: 1px solid red;
+            margin: 0 auto;
+        }
+
+        .box1 {
+            width: 400px;
+            height: 50px;
+            margin: 0 auto;
+        }
+    </style>
+    <script src="../js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            window.onresize = function () {
+                var lt = $('.box').offset();
+                var t = $('.box').offset().top;
+                var l = $('.box').offset().left;
+                console.log(lt)
+                console.log(l)
+                console.log(t)
+
+                $(".w1").text(l)
+                $(".w2").text(t)
+            }
+
+        })
+    </script>
+</head>
+
+<body>
+    <div class="box">
+        获取元素到顶部和左部的距离
+    </div>
+    <div class="box1">
+        top:<span class="w1">获取中。。。</span>
+        ;left:<span class="w2">获取中。。。</span>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery获取和设置元素宽高</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            /* width: 500px; */
+            /* height: 600px; */
+            border: 1px solid red;
+        }
+    </style>
+    <script src="../js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $(".box").mousemove(function () {
+                var w = $(".box").width();
+                var h = $(".box").height();
+                console.log("宽--->" + w, "宽--->" + h)
+
+                $(".box").append("宽--->" + w, "宽--->" + h)
+            })
+
+
+        })
+    </script>
+</head>
+
+<body>
+
+    <textarea name="" id="" cols="30" rows="10" class="box"></textarea>
+
+</body>
+
+</html>
